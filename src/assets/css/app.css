@@ -44,7 +44,7 @@
 
 .overlay .video {
   @apply absolute transform bg-blue-200 bg-no-repeat bg-center w-20 h-20 rounded-full items-center justify-center flex -translate-x-1/2 -translate-y-1/2;
-  background-image: url("../src/image/icon-play.svg#icon-play");
+  background-image: url("../../image/icon-play.svg#icon-play");
   top: 50%;
   left: 50%;
 }
@@ -81,6 +81,7 @@ ul.breadcrumb li:last-child a {
 }
 
 /* slider */
+
 
 .slider {
   @apply flex my-4 flex-col;
@@ -134,4 +135,8 @@ a.cart.cart-filled svg g circle.dot {
 
 button[disabled] {
   @apply bg-gray-300 hover:bg-gray-300 text-gray-400 hover:text-gray-400 cursor-not-allowed;
+}
+
+section:not(.bg-gray-100) + section.sitemap > div {
+  @apply border-t;
 }
